@@ -24,8 +24,8 @@ Metric
 7. **Transaction Costs**: Verified robustness at 0.05% per trade
 
 # Files
-- `pairs_trading_financial_sector.ipynb` — Main notebook with full analysis
-- `AI_project_financials.csv` — Raw price data for all 6 stocks
+- `pairs_trading_financial_sector.ipynb` - Main notebook with full analysis
+- `AI_project_financials.csv` - Raw price data for all 6 stocks
 
 # Libraries Used
 - pandas, numpy, matplotlib, seaborn
@@ -33,7 +33,7 @@ Metric
 - scipy
 
 # What's Next
-The low trading frequency (~3 trades/year) of this daily strategy motivates 
+The low trading frequency ( around 3 trades/year) of this daily strategy motivates 
 a transition toward high-frequency trading, where alpha opportunities are 
 more abundant at the intraday and tick level.
 
