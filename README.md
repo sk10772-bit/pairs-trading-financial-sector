@@ -1,9 +1,9 @@
 # Pairs Trading Strategy — US Financial Sector (2016–2025)
 
-## Overview
+# Overview
 This project implements a statistical arbitrage (pairs trading) strategy on six large-cap US bank stocks: JPM, GS, MS, C, BAC, and WFC using daily price data from 2016 to 2025.
 
-## Key Results
+# Key Results
 | Metric | Value |
 |---|---|
 | Best Pair | Citigroup (C) & Bank of America (BAC) |
@@ -15,7 +15,7 @@ This project implements a statistical arbitrage (pairs trading) strategy on six 
 | Max Drawdown | -37.28% |
 | Number of Trades | 25 |
 
-## Methodology
+# Methodology
 1. **Data** — Bloomberg Terminal daily close prices (2016–2025)
 2. **Pair Selection** — Correlation matrix → OLS regression → ADF cointegration test
 3. **Half-life Analysis** — Ornstein-Uhlenbeck model to quantify mean reversion speed
@@ -24,21 +24,21 @@ This project implements a statistical arbitrage (pairs trading) strategy on six 
 6. **Threshold Sensitivity** — Tested z* = 1.5, 2.0, 2.5, 3.0
 7. **Transaction Costs** — Verified robustness at 0.05% per trade
 
-## Files
+# Files
 - `pairs_trading_financial_sector.ipynb` — Main notebook with full analysis
 - `AI_project_financials.csv` — Raw price data for all 6 stocks
 
-## Libraries Used
+# Libraries Used
 - pandas, numpy, matplotlib, seaborn
 - statsmodels (OLS, ADF test, OU model)
 - scipy
 
-## What's Next
+# What's Next
 The low trading frequency (~3 trades/year) of this daily strategy motivates 
 a transition toward high-frequency trading, where alpha opportunities are 
 more abundant at the intraday and tick level.
 
-## Requirements
+# Requirements
 ```
 pip install pandas numpy matplotlib seaborn statsmodels scipy
 ```
